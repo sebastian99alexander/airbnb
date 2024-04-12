@@ -13,14 +13,17 @@ export default function App() {
 
     const cardElements = cardData.map(card =>{
         return <Card 
-            img={card.coverImg} 
-            title={card.title} 
-            description={card.description} 
-            price={card.price} 
-            rating={card.stats.rating} 
-            reviewCount={card.stats.reviewCount} 
-            location={card.location} 
-            openSpots = {card.openSpots}
+            key={card.id}
+            item={card}
+            //{...item}
+            // img={card.coverImg} 
+            // title={card.title} 
+            // description={card.description} 
+            // price={card.price} 
+            // rating={card.stats.rating} 
+            // reviewCount={card.stats.reviewCount} 
+            // location={card.location} 
+            // openSpots = {card.openSpots}
             />
     })
     return (
